@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,8 +39,8 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className="text-xl">
-          Gadget <span className="text-violet-600">Shoppping</span>
+        <Link to="/" className="text-xl font-medium text-Blue">
+          Gadget<span className="text-Red">Shoppping</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -73,7 +73,7 @@ export const Navbar = () => {
           <Link to="/register">
             <button
               type="submit"
-              className="btn bg-violet-600 text-gray-50 py-2 px-4 rounded-md border border-violet-600 hover:border-violet-600 outline-none hover:bg-gray-50 hover:text-violet-600 transition-all duration-1000 delay-75 ease-in-out"
+              className="btn bg-Red text-gray-50 py-2 px-4 rounded-md border border-Red hover:border-Red outline-none hover:bg-gray-50 hover:text-Red transition-all duration-1000 delay-75 ease-in-out"
             >
               Register
             </button>
